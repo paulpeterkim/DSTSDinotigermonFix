@@ -1,8 +1,13 @@
 # Dinotigermon — Ground Fang / Highland Fang
 
-**[Download V2 test build](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V2_TEST.zip)**
+**[Download V3 test build](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V3_TEST.zip)**
 
-V2 reworks the attacks around the requested actions. Ground Fang approaches,
+V3 adds independent shoulder, hip, ankle and toe movement, with smoother takeoff
+and landing transitions. It also repairs the lower-jaw skin binding: the mouth
+now visibly opens and snaps closed during the bite, while the upper fangs stay
+attached to the head.
+
+Ground Fang approaches,
 plants its forepaws, draws up its fangs, stabs, then wrenches and tears. Highland
 Fang coils during a high leap, rotates into a fast fang-led downswing, then
 extends its paws to catch the landing.
@@ -20,32 +25,42 @@ is a preview aid. Victim reactions are not staged or included.
 
 ### Ground Fang
 
-![Ground Fang V2](previews/Ground_Fang_V2.gif)
+![Ground Fang V3](previews/Ground_Fang_V3.gif)
 
 ### Highland Fang
 
-![Highland Fang V2](previews/Highland_Fang_V2.gif)
+![Highland Fang V3](previews/Highland_Fang_V3.gif)
+
+### Mouth movement
+
+This close-up holds the head still to show the repaired lower jaw opening and
+closing independently.
+
+![Jaw motion V3](previews/Jaw_Motion_V3.gif)
 
 ## Installation and testing
 
-Install V2 in place of the original Dinotigermon mod. Enable only one copy and
+Install V3 in place of the original Dinotigermon mod. Enable only one copy and
 keep the existing Reloaded-II/DSTS.ModLoader dependencies installed.
 
 These files passed binary/data, planted-paw, archive integrity and Blender checks.
 They have not been tested in the game. Actual synchronized enemy pinning,
 cutting effects, combat spacing, hit timing, camera framing, and return to
 formation still need game-side work or testing. In particular, the existing
-engine hit setting triggers after the clip; V2 deliberately uses longer clips.
+engine hit setting triggers after the clip; V3 retains V2's longer clips.
 The attacker-only upload has no victim track or paired-event definition.
 
-This edits dacare's uploaded Dinotigermon v1.11.0 mod. The model, textures, skeleton
-and V1 skill/text data are preserved. Ground targets one enemy; Highland targets
+This edits dacare's uploaded Dinotigermon v1.11.0 mod. V3 changes only selected
+lower-jaw skin weights in the model; vertex positions, topology, textures,
+materials and skeleton are preserved. Skill/text data is unchanged from V2.
+Ground targets one enemy; Highland targets
 all enemies. Both retain physical Null damage, power 55, SP 300 and one hit.
 
 ## Downloads and notes
 
-- [V2 installation notes, scope and rebuild instructions](downloads/README_V2.md)
-- [Editable V2 Blender scene](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Attacks_V2.blend)
-- [V2 scripts and validation reports](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V2_Source.zip)
+- [V3 installation notes, scope and rebuild instructions](downloads/README_V3.md)
+- [Editable V3 Blender scene](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Attacks_V3.blend)
+- [V3 scripts and validation reports](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V3_Source.zip)
+- [V2 test build for rollback](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V2_TEST.zip)
 - [V1 test build for rollback](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_TEST.zip)
 - [SHA-256 checksums](downloads/SHA256SUMS.txt)
