@@ -1,6 +1,13 @@
 # Dinotigermon — Ground Fang / Highland Fang
 
-**[Download V3 test build](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V3_TEST.zip)**
+**[Download V4 effects test build](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V4_EFFECTS_TEST.zip)**
+
+V4 adds the game's Wind Claw effect to Ground Fang and Awesome Quake with a
+rock hit to Highland Fang. A short camera shake accompanies Highland's landing.
+The accepted V3 actor motions, mouth rig and gameplay parameters are preserved.
+Native particle placement and timing require an in-game test; the existing
+after-animation hit setting is retained. See the [V4 notes](downloads/README_V4.md)
+for exact scope and timing limits.
 
 V3 adds independent shoulder, hip, ankle and toe movement, with smoother takeoff
 and landing transitions. It also repairs the lower-jaw skin binding: the mouth
@@ -20,8 +27,16 @@ clips match the revised lengths.
 
 ## Previews
 
-These show the actual baked Dinotigermon animations in Blender. The floor grid
-is a preview aid. Victim reactions are not staged or included.
+These show the actual baked V3 Dinotigermon animations, which V4 preserves.
+The floor grid is a preview aid. Victim reactions and native game particles
+are not rendered in Blender.
+
+### V4 landing camera
+
+This uses the exported V4 player camera. It shows the landing tremor without
+staged particle effects.
+
+![Highland Fang V4 camera](previews/Highland_Camera_V4.gif)
 
 ### Ground Fang
 
@@ -40,7 +55,7 @@ closing independently.
 
 ## Installation and testing
 
-Install V3 in place of the original Dinotigermon mod. Enable only one copy and
+Install V4 in place of the original Dinotigermon mod. Enable only one copy and
 keep the existing Reloaded-II/DSTS.ModLoader dependencies installed.
 
 These files passed binary/data, planted-paw, archive integrity and Blender checks.
@@ -52,13 +67,17 @@ The attacker-only upload has no victim track or paired-event definition.
 
 This edits dacare's uploaded Dinotigermon v1.11.0 mod. V3 changes only selected
 lower-jaw skin weights in the model; vertex positions, topology, textures,
-materials and skeleton are preserved. Skill/text data is unchanged from V2.
+materials and skeleton are preserved. V4 changes only visual effect references
+in the skill data; names, descriptions and combat parameters are unchanged.
 Ground targets one enemy; Highland targets
 all enemies. Both retain physical Null damage, power 55, SP 300 and one hit.
 
 ## Downloads and notes
 
-- [V3 installation notes, scope and rebuild instructions](downloads/README_V3.md)
+- [V4 effect notes, installation and rebuild instructions](downloads/README_V4.md)
+- [V4 scripts and validation reports](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V4_Source.zip)
+- [V3 test build for rollback](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V3_TEST.zip)
+- [V3 animation notes and rebuild instructions](downloads/README_V3.md)
 - [Editable V3 Blender scene](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Attacks_V3.blend)
 - [V3 scripts and validation reports](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V3_Source.zip)
 - [V2 test build for rollback](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V2_TEST.zip)
