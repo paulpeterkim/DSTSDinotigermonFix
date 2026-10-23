@@ -1,6 +1,18 @@
 # Dinotigermon — Ground Fang / Highland Fang
 
-**[Download V7 test build](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V7_TEST.zip)**
+**[Download V8 test build](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V8_TEST.zip)**
+
+V8 reaches a much tighter muzzle close-up during takeoff, then reveals the full
+fangs for the strike. Ground keeps its final jaw portrait. The accepted actor
+motion and active endings are preserved; the tighter framing reduces visible
+leg motion.
+
+Both skills now use complete local **main-effect bundles**, following the
+supplied Kumamon & Korikakumon reference: wind ribbons during Ground's bite and
+tear, rocks and a ground shockwave during Highland's landing strike. These
+replace the later full-effect references that only appeared after the hit.
+The new effect bundles are muted. Their native shader appearance, placement
+and playback still need an in-game check. See the [V8 notes](downloads/README_V8.md).
 
 V7 removes the recovery/idle tails. Ground Fang ends on its final tear and
 Highland Fang ends during the landing strike, with both still in attacking
@@ -39,17 +51,17 @@ clips match those shorter lengths.
 
 ## Previews
 
-These show the exported V7 cameras at 16:9 with the active portions of the
+These show the exported V8 cameras at 16:9 with the active portions of the
 preserved actor motion. Victim reactions and native game particles are not
 rendered in Blender.
 
 ### Ground Fang
 
-![Ground Fang V7 active ending](previews/Ground_Fang_Camera_V7.gif)
+![Ground Fang V8 earlier close-up](previews/Ground_Fang_Camera_V8.gif)
 
 ### Highland Fang
 
-![Highland Fang V7 active ending](previews/Highland_Fang_Camera_V7.gif)
+![Highland Fang V8 earlier close-up](previews/Highland_Fang_Camera_V8.gif)
 
 ### Mouth movement
 
@@ -60,7 +72,7 @@ closing independently.
 
 ## Installation and testing
 
-Replace the entire old Dinotigermon mod folder with V7 so the removed description
+Replace the entire old Dinotigermon mod folder with V8 so the removed description
 files do not remain. Enable only one copy and
 keep the existing Reloaded-II/DSTS.ModLoader dependencies installed.
 
@@ -68,8 +80,8 @@ These files passed binary/data, planted-paw, archive integrity and Blender check
 They have not been tested in the game. Actual synchronized enemy pinning,
 cutting effects, combat spacing, hit timing, camera framing, and return to
 formation still need game-side work or testing. In particular, the existing
-engine hit setting triggers after the clip; V7 now ends those clips at the attack
-instead of including the recovery/idle tail.
+engine damage setting triggers after the clip; the V8 main visual effects run
+alongside the attack, independently of that later damage trigger.
 The attacker-only upload has no victim track or paired-event definition.
 
 This edits dacare's uploaded Dinotigermon v1.11.0 mod. V3 changes only selected
@@ -82,6 +94,9 @@ all enemies. Both retain physical Null damage, power 55, SP 300 and one hit.
 
 ## Downloads and notes
 
+- [V8 notes, installation and rebuild instructions](downloads/README_V8.md)
+- [V8 scripts and validation reports](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V8_Source.zip)
+- [V7 test build for rollback](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V7_TEST.zip)
 - [V7 notes, installation and rebuild instructions](downloads/README_V7.md)
 - [V7 scripts and validation reports](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V7_Source.zip)
 - [V6 test build for rollback](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V6_TEST.zip)
