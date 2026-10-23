@@ -1,6 +1,12 @@
 # Dinotigermon — Ground Fang / Highland Fang
 
-**[Download V6 test build](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V6_TEST.zip)**
+**[Download V7 test build](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V7_TEST.zip)**
+
+V7 removes the recovery/idle tails. Ground Fang ends on its final tear and
+Highland Fang ends during the landing strike, with both still in attacking
+poses. Ground's jaw close-up is retimed to that earlier ending. The retained
+motion is unchanged, and the previews have no added pause at the end.
+See the [V7 notes](downloads/README_V7.md).
 
 V6 shows both attacks from left to right and keeps the face close-ups during the
 bite and downward strike. Ground Fang now ends on a tight jaw shot. Both skills
@@ -27,22 +33,23 @@ extends its paws to catch the landing.
 
 The original physical attack's approximately 4.14-unit approach is restored.
 Ground's planted hold is verified after animation compression; Highland's fangs
-lead its forepaws during the cutting stroke. Ground runs for 120 frames and
-Highland for 96 at the original approximately 30 fps. Both player/enemy camera
-clips match the revised lengths.
+lead its forepaws during the cutting stroke. Ground now runs for 68 frames and
+Highland for 48 at the original approximately 30 fps. Both player/enemy camera
+clips match those shorter lengths.
 
 ## Previews
 
-These show the actual exported V6 cameras at 16:9 with the preserved V3 actor
-animations. Victim reactions and native game particles are not rendered in Blender.
+These show the exported V7 cameras at 16:9 with the active portions of the
+preserved actor motion. Victim reactions and native game particles are not
+rendered in Blender.
 
 ### Ground Fang
 
-![Ground Fang V6 left-to-right camera and jaw ending](previews/Ground_Fang_Camera_V6.gif)
+![Ground Fang V7 active ending](previews/Ground_Fang_Camera_V7.gif)
 
 ### Highland Fang
 
-![Highland Fang V6 left-to-right camera](previews/Highland_Fang_Camera_V6.gif)
+![Highland Fang V7 active ending](previews/Highland_Fang_Camera_V7.gif)
 
 ### Mouth movement
 
@@ -53,7 +60,7 @@ closing independently.
 
 ## Installation and testing
 
-Replace the entire old Dinotigermon mod folder with V6 so the removed description
+Replace the entire old Dinotigermon mod folder with V7 so the removed description
 files do not remain. Enable only one copy and
 keep the existing Reloaded-II/DSTS.ModLoader dependencies installed.
 
@@ -61,7 +68,8 @@ These files passed binary/data, planted-paw, archive integrity and Blender check
 They have not been tested in the game. Actual synchronized enemy pinning,
 cutting effects, combat spacing, hit timing, camera framing, and return to
 formation still need game-side work or testing. In particular, the existing
-engine hit setting triggers after the clip; V3 retains V2's longer clips.
+engine hit setting triggers after the clip; V7 now ends those clips at the attack
+instead of including the recovery/idle tail.
 The attacker-only upload has no victim track or paired-event definition.
 
 This edits dacare's uploaded Dinotigermon v1.11.0 mod. V3 changes only selected
@@ -74,7 +82,10 @@ all enemies. Both retain physical Null damage, power 55, SP 300 and one hit.
 
 ## Downloads and notes
 
-- [V6 notes, installation and rebuild instructions](downloads/README_V6.md)
+- [V7 notes, installation and rebuild instructions](downloads/README_V7.md)
+- [V7 scripts and validation reports](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V7_Source.zip)
+- [V6 test build for rollback](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V6_TEST.zip)
+- [V6 notes and rebuild instructions](downloads/README_V6.md)
 - [V6 scripts and validation reports](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V6_Source.zip)
 - [V5 camera test build for rollback](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V5_CAMERA_TEST.zip)
 - [V5 camera notes and rebuild instructions](downloads/README_V5.md)
