@@ -1,11 +1,12 @@
 # Dinotigermon — Ground Fang / Highland Fang
 
-**[Download V5 face-camera test build](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V5_CAMERA_TEST.zip)**
+**[Download V6 test build](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V6_TEST.zip)**
 
-V5 keeps the current opening shots, then pushes into Dinotigermon's face for the
-bite and downward strike. It follows the muzzle and fangs through contact and
-eases back to the existing ending view. Both player and enemy cameras are
-revised; all other V4 game files are preserved. See the [V5 notes](downloads/README_V5.md).
+V6 shows both attacks from left to right and keeps the face close-ups during the
+bite and downward strike. Ground Fang now ends on a tight jaw shot. Both skills
+use description ID `0` for game-generated descriptions; the eleven custom
+description overrides are removed and the skill names are retained.
+See the [V6 notes](downloads/README_V6.md).
 
 V4 adds the game's Wind Claw effect to Ground Fang and Awesome Quake with a
 rock hit to Highland Fang. A short camera shake accompanies Highland's landing.
@@ -32,16 +33,16 @@ clips match the revised lengths.
 
 ## Previews
 
-These show the actual exported V5 cameras at 16:9 with the preserved V3 actor
+These show the actual exported V6 cameras at 16:9 with the preserved V3 actor
 animations. Victim reactions and native game particles are not rendered in Blender.
 
 ### Ground Fang
 
-![Ground Fang V5 face camera](previews/Ground_Fang_Camera_V5.gif)
+![Ground Fang V6 left-to-right camera and jaw ending](previews/Ground_Fang_Camera_V6.gif)
 
 ### Highland Fang
 
-![Highland Fang V5 face camera](previews/Highland_Fang_Camera_V5.gif)
+![Highland Fang V6 left-to-right camera](previews/Highland_Fang_Camera_V6.gif)
 
 ### Mouth movement
 
@@ -52,7 +53,8 @@ closing independently.
 
 ## Installation and testing
 
-Install V5 in place of the original Dinotigermon mod. Enable only one copy and
+Replace the entire old Dinotigermon mod folder with V6 so the removed description
+files do not remain. Enable only one copy and
 keep the existing Reloaded-II/DSTS.ModLoader dependencies installed.
 
 These files passed binary/data, planted-paw, archive integrity and Blender checks.
@@ -65,13 +67,17 @@ The attacker-only upload has no victim track or paired-event definition.
 This edits dacare's uploaded Dinotigermon v1.11.0 mod. V3 changes only selected
 lower-jaw skin weights in the model; vertex positions, topology, textures,
 materials and skeleton are preserved. V4 changes only visual effect references
-in the skill data; names, descriptions and combat parameters are unchanged.
+in the skill data. V6 restores automatic descriptions while preserving the names
+and combat parameters.
 Ground targets one enemy; Highland targets
 all enemies. Both retain physical Null damage, power 55, SP 300 and one hit.
 
 ## Downloads and notes
 
-- [V5 camera notes, installation and rebuild instructions](downloads/README_V5.md)
+- [V6 notes, installation and rebuild instructions](downloads/README_V6.md)
+- [V6 scripts and validation reports](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V6_Source.zip)
+- [V5 camera test build for rollback](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V5_CAMERA_TEST.zip)
+- [V5 camera notes and rebuild instructions](downloads/README_V5.md)
 - [V5 scripts and validation reports](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V5_Source.zip)
 - [V4 effects test build for rollback](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V4_EFFECTS_TEST.zip)
 - [V4 effect notes and rebuild instructions](downloads/README_V4.md)
