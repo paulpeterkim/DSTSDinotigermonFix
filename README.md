@@ -1,6 +1,11 @@
 # Dinotigermon — Ground Fang / Highland Fang
 
-**[Download V4 effects test build](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V4_EFFECTS_TEST.zip)**
+**[Download V5 face-camera test build](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V5_CAMERA_TEST.zip)**
+
+V5 keeps the current opening shots, then pushes into Dinotigermon's face for the
+bite and downward strike. It follows the muzzle and fangs through contact and
+eases back to the existing ending view. Both player and enemy cameras are
+revised; all other V4 game files are preserved. See the [V5 notes](downloads/README_V5.md).
 
 V4 adds the game's Wind Claw effect to Ground Fang and Awesome Quake with a
 rock hit to Highland Fang. A short camera shake accompanies Highland's landing.
@@ -27,24 +32,16 @@ clips match the revised lengths.
 
 ## Previews
 
-These show the actual baked V3 Dinotigermon animations, which V4 preserves.
-The floor grid is a preview aid. Victim reactions and native game particles
-are not rendered in Blender.
-
-### V4 landing camera
-
-This uses the exported V4 player camera. It shows the landing tremor without
-staged particle effects.
-
-![Highland Fang V4 camera](previews/Highland_Camera_V4.gif)
+These show the actual exported V5 cameras at 16:9 with the preserved V3 actor
+animations. Victim reactions and native game particles are not rendered in Blender.
 
 ### Ground Fang
 
-![Ground Fang V3](previews/Ground_Fang_V3.gif)
+![Ground Fang V5 face camera](previews/Ground_Fang_Camera_V5.gif)
 
 ### Highland Fang
 
-![Highland Fang V3](previews/Highland_Fang_V3.gif)
+![Highland Fang V5 face camera](previews/Highland_Fang_Camera_V5.gif)
 
 ### Mouth movement
 
@@ -55,7 +52,7 @@ closing independently.
 
 ## Installation and testing
 
-Install V4 in place of the original Dinotigermon mod. Enable only one copy and
+Install V5 in place of the original Dinotigermon mod. Enable only one copy and
 keep the existing Reloaded-II/DSTS.ModLoader dependencies installed.
 
 These files passed binary/data, planted-paw, archive integrity and Blender checks.
@@ -74,7 +71,10 @@ all enemies. Both retain physical Null damage, power 55, SP 300 and one hit.
 
 ## Downloads and notes
 
-- [V4 effect notes, installation and rebuild instructions](downloads/README_V4.md)
+- [V5 camera notes, installation and rebuild instructions](downloads/README_V5.md)
+- [V5 scripts and validation reports](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V5_Source.zip)
+- [V4 effects test build for rollback](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V4_EFFECTS_TEST.zip)
+- [V4 effect notes and rebuild instructions](downloads/README_V4.md)
 - [V4 scripts and validation reports](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V4_Source.zip)
 - [V3 test build for rollback](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V3_TEST.zip)
 - [V3 animation notes and rebuild instructions](downloads/README_V3.md)
