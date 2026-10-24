@@ -1,6 +1,12 @@
 # Dinotigermon — Ground Fang / Highland Fang
 
-**[Download V8 test build](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V8_TEST.zip)**
+**[Download Dinotigermon 1.13.0 with V8 skills](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_1.13.0_V8_Skills_TEST.zip)**
+
+The latest build preserves dacare's v1.13.0 texture and riding updates while
+carrying over the exact V8 attacks, cameras, jaw binding and effects. Both custom
+skill voice references are now `0`, following the native boss skill pattern;
+other audio settings are preserved. Voice suppression still needs an in-game
+check. See the [1.13.0 merge notes](downloads/README_V8_1.13.0.md).
 
 V8 reaches a much tighter muzzle close-up during takeoff, then reveals the full
 fangs for the strike. Ground keeps its final jaw portrait. The accepted actor
@@ -53,7 +59,8 @@ clips match those shorter lengths.
 
 These show the exported V8 cameras at 16:9 with the active portions of the
 preserved actor motion. Victim reactions and native game particles are not
-rendered in Blender.
+rendered in Blender. The motion/cameras are unchanged in the 1.13.0 merge;
+these existing previews use the older base texture.
 
 ### Ground Fang
 
@@ -72,7 +79,7 @@ closing independently.
 
 ## Installation and testing
 
-Replace the entire old Dinotigermon mod folder with V8 so the removed description
+Replace the entire old Dinotigermon mod folder with the latest build so the removed description
 files do not remain. Enable only one copy and
 keep the existing Reloaded-II/DSTS.ModLoader dependencies installed.
 
@@ -94,6 +101,9 @@ all enemies. Both retain physical Null damage, power 55, SP 300 and one hit.
 
 ## Downloads and notes
 
+- [1.13.0 merge notes and rebuild instructions](downloads/README_V8_1.13.0.md)
+- [1.13.0 merge scripts and validation reports](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_1.13.0_V8_Source.zip)
+- [Previous V8 test build on 1.11.0 for rollback](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V8_TEST.zip)
 - [V8 notes, installation and rebuild instructions](downloads/README_V8.md)
 - [V8 scripts and validation reports](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V8_Source.zip)
 - [V7 test build for rollback](https://github.com/paulpeterkim/DSTSDinotigermonFix/raw/refs/heads/main/downloads/Dinotigermon_Fang_Skills_V7_TEST.zip)
